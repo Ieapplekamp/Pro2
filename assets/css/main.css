@@ -653,10 +653,6 @@ input, select, textarea {
 		font-size: 1.4rem;
 	}
 
-	.far:hover, .fas:hover {
-		color: #264c8a;
-	}
-
 	.ml {
 		margin-left: 20px;
 	}
