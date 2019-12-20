@@ -113,10 +113,6 @@ input, select, textarea {
 		font-size: 1.5rem;
 	}
 
-	.portfolio-pics {
-		max-width: 50%;
-	}
-
 
 /* Type */
 
@@ -161,7 +157,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		/* border-bottom: dotted 1px rgba(255, 255, 255, 0.5); */
 		text-decoration: none;
 		color: inherit;
 	}
@@ -646,6 +642,32 @@ input, select, textarea {
 
 /* Image */
 
+	.project-pics {
+		float: left;
+	}
+
+	.github-links {
+		float: right; 
+		display: flex;
+		margin: 3% 41% auto;
+		font-size: 1.4rem;
+	}
+
+	.far:hover, .fas:hover {
+		color: #264c8a;
+	}
+
+	.ml {
+		margin-left: 20px;
+	}
+
+	.app-description {
+		text-align: center;
+		margin-top: 3%;
+		margin-bottom: 7%;
+		display: inline-block;
+	}
+
 	.image {
 		border-radius: 4px;
 		border: 0;
@@ -654,7 +676,6 @@ input, select, textarea {
 	}
 
 		.image:before {
-			margin-left: 50%;
 			pointer-events: none;
 			background-image: url("../../images/overlay.png");
 			background-color: rgba(19, 21, 25, 0.5);
@@ -666,7 +687,7 @@ input, select, textarea {
 			opacity: 0.5;
 			position: absolute;
 			top: 0;
-			width: 100%;
+			width: 90%;
 		}
 
 		.image img {
@@ -706,30 +727,43 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 2.5rem 0;
-			width: 50%;
+			width: 100%;
+		}
+		.image.main.portfolio-pics {
+			display: block;
+			float: left;
+			margin-left: 0;
+			margin-top: 1%;
+			max-width: 50%;
 		}
 
 			.image.main img {
-				margin-left: 50%;
+				padding-right: 10%;
 				width: 100%;
 			}
 
 		@media screen and (max-width: 736px) {
 
-			.image.main {
-				margin: 2rem 0;
+			.github-links {
+				margin: 3% 38% auto;
 			}
 
 		}
 
 		@media screen and (max-width: 480px) {
 
-			.image.main {
-				margin: 1.5rem 0;
+			.image.main.portfolio-pics {
+				float: none;
+				margin: auto;
+				padding-right: 0;
+				margin-bottom: 2%;
 			}
 
-		}
+			.github-links {
+				margin: 3% 35% auto;
+			}
+
+		} 
 
 /* List */
 
@@ -1381,11 +1415,7 @@ input, select, textarea {
 				}
 
 					#header nav ul li a:hover {
-						background: linear-gradient(to right, rgba(25, 28, 32, .85), transparent);
-						/* background-color: rgba(40, 44, 47, 0.5); */
-					}
-
-					#header nav ul li a:active {
+						background: linear-gradient(to right, rgba(204, 204, 204, 0.9), transparent);
 						background-color: rgba(25, 28, 32, 0.5);
 					}
 
@@ -1557,12 +1587,14 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+			width: 50rem;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
 			opacity: 0;
 		}
+
+		
 
 			#main article.active {
 				-moz-transform: translateY(0);
