@@ -605,6 +605,11 @@ input, select, textarea {
 
 /* Icon */
 
+	.devIcons {
+		text-align: center;
+		font-size: 1.3rem;
+	}
+
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
