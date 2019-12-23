@@ -652,19 +652,17 @@ input, select, textarea {
 	}
 
 	.github-links {
-		float: right; 
-		display: flex;
-		margin: 3% 41% auto;
+		text-align: center;
 		font-size: 1.4rem;
 	}
 
 	.ml {
-		margin-left: 20px;
+		margin-left: 1%;
 	}
 
 	.app-description {
 		text-align: center;
-		margin-top: 3%;
+		/* margin-top: 0; */
 		margin-bottom: 7%;
 		display: inline-block;
 	}
@@ -674,6 +672,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		margin-bottom: 3%;
 	}
 
 		.image:before {
@@ -743,13 +742,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 736px) {
-
-			.github-links {
-				margin: 3% 38% auto;
-			}
-
-		}
+		/* @media screen and (max-width: 736px) {} */
 
 		@media screen and (max-width: 480px) {
 
@@ -758,10 +751,6 @@ input, select, textarea {
 				margin: auto;
 				padding-right: 0;
 				margin-bottom: 2%;
-			}
-
-			.github-links {
-				margin: 3% 35% auto;
 			}
 
 		} 
@@ -780,7 +769,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 		padding-left: 1em;
 	}
 
